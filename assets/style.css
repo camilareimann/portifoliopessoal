@@ -1,76 +1,438 @@
-@media screen and (max-width: 600px) {
-    .row {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
 
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
+body {
+    margin: 0;
+    
+}
+/*Typography*/
 
-#about{
+h1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    margin: 0;
+    padding: 0 0 24px 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+    margin: 0;
+    padding: 0 0 24px 0;
+}
+
+h3 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 0;
+    padding: 0 0 24px 0;
+}
+
+li {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-title {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.32px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Layout*/
+
+nav {
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+    color: #ffff;
+}
+
+.button-cv{
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 24px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffff;
+    border: 1px solid #FFF;
+    margin: 24px 0 0 0;
+}
+
+.hero {
+    padding: 0 10% 250px 10%;
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./imgBackgroundHero.png);
+    background-repeat: none;
+    background-size: cover;
+    color: #ffff;
+}
+
+#hero-txt-wrapper {
+    width: 100%;
+    max-width: auto;
+}
+
+.h1 {
+    width: 100%;
+}
+
+#available-tag {
+    margin-bottom: 48px;
+}
+
+/* ABOUT SECTION */
+
+#about {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 5%;
+    padding: 96px 10% 0 10%;
+
     flex-flow: wrap;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     gap: 48px;
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-#text-box{
+#text-box {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     margin-bottom: 32px;
     width: 100%;
-    max-width: 60%;
+    max-width: auto;
 }
 
-#aboutMe{
+#aboutMe {
     width: 100%;
-    max-width: 700px;
+    max-width: auto;
     height: auto;
     align-items: center;
+    justify-content: flex-end;
 }
 
-#skills{
+.about-me-prehead{
+    color:#5B00B7;
+    margin-bottom: 16px;
+}
+
+#tools {
     display: flex;
     flex-direction: column;
     gap: 16px
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: row;
     gap: 20px;
     width: 100%;
-    max-width: 60%;
+    max-width: auto;
 }
 
-.skill-box{
+.skill-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
-}
-
-.skill-icon{
     width: 100%;
     max-width: 100px;
 }
 
+.skill-icon {
+    width: 100%;
+    max-width: 100px;
+
+}
+
+#skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 96px 10% 96px 10%;
+    flex-flow: wrap;
+}
+
+.skill-col-wrapper{
+    display: flex;
+    width: 100%;
+    max-width: auto;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.skill-wrapper{
+    display: flex;
+    width: 100%;
+    max-width: auto;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: space-around;
+}
+
+.skill-list-box{
+    display: flex;
+    width: 100%;
+    max-width: auto;
+    height: 260px;
+    flex-direction: column;
+    border: 1px solid #CDCDCD;
+    border-radius: 12px;
+    padding: 24px 28px;
+}
+
+.skill-title{
+    color:#5B00B7;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.skill-list-long{
+    columns: 2; /* Set the number of columns you want */
+    -webkit-columns: 2; /* For Safari and older versions of Chrome */
+    -moz-columns: 2; /* For Firefox */
+    padding: 0;
+
+}
+
+.skill-list-long li {
+    margin-left: 20px; /* Add some spacing between list items */
+}
+
+.skill-list li{
+    margin-left: 20px;
+}
+
+.skill-list{
+    columns: 1; /* Set the number of columns you want */
+    -webkit-columns: 1; /* For Safari and older versions of Chrome */
+    -moz-columns: 1; /* For Firefox */
+    padding: 0;
+    height: 100%;
+}
+
+
+
+
+
+/*.about {
+    display: flex;
+    padding: 100px 96px 70px 96px;
+    align-items: flex-start;
+    gap: 64px;
+    max-width: 90%;
+}
+
+.aboutme {
+    color: #5B00B7;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+}
+
+.icon-row-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    margin-bottom: 24px;
+}
+
+.icon-row-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    max-width: 100%;
+}
+
+.skill-title {
+    color: #5B00B7;
+}
+
+*/
+/*RESPONSIVO*/
+
+@media screen and (max-width: 600px) {
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: 10px;
+    }
+
+    #skills{
+        width: 100%;
+        flex-direction: column;
+    }
+
+  .skill-title{
+        font-size: 18px;
+    }
+
+    .column {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .skill-list-box{
+        height: 100%;
+        max-height: auto;
+    }
+
+    .skill-wrapper{
+        width: 50%;
+        flex-direction: column;
+    }
+}
