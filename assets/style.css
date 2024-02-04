@@ -130,10 +130,14 @@ button {
     letter-spacing: 0.32px;
     margin: 0;
     padding: 0;
+    transition: all .2s ease-in-out;
+
 }
 
-
-
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 /*Layout*/
 
 nav {
@@ -183,6 +187,19 @@ nav {
 
 #available-tag {
     margin-bottom: 48px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+	70% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(0.95);
+	}
 }
 
 /* ABOUT SECTION */
@@ -250,7 +267,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 96px 10% 0 10%;
+    padding: 96px 10% 96px 10%;
     flex-flow: wrap;
 }
 
@@ -345,6 +362,7 @@ nav {
     display: flex;
     justify-content: center;
     padding: 96px 10% 0 10%;
+    color: #fff;
     background-color: #5B00B7;
 }
 
@@ -382,10 +400,53 @@ nav {
     border-radius: 8px;
     border: 1px solid #FFF;
     color: #fff;
+    /*transition: all .2s ease-in-out;*/
 }
 
-.portfolio-infos{
+/*.portfolio-card button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}*/
+
+.portfolio-card h2{
+    font-size: 24px;
+}
+
+.portfolio-infos {
     padding: 24px 0 0 0;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.portfolio-infos h5{
+    margin-bottom: 26px;
+}
+
+#portfolio-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 96px 10% 96px 10%;
+    color: #fff;
+    background-color: #5B00B7;
+}
+
+.portfolio-2-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-2-cards img{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio-2-cards img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 /*RESPONSIVIDADE*/
@@ -416,7 +477,7 @@ nav {
 
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     .skill-list-box {
         height: 100%;
         max-height: auto;
