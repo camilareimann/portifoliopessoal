@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../FullStackHealth/Aula02"
+		},
+		{
+			"path": "../../../../../../../Downloads/spaceinvaders"
+		},
+		{
+			"path": "../../../PortfolioCami/codigo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "freeCodeCamp"
+	}
+}

@@ -6,7 +6,6 @@
 
 body {
     margin: 0;
-
 }
 
 /*Typography*/
@@ -103,11 +102,11 @@ li {
     padding: 0;
 }
 
-::placeholder{
-    color:#dddada;
+::placeholder {
+    color: #dddada;
 }
 
-a{
+a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -455,7 +454,7 @@ nav {
 
 .portfolio-2-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -477,6 +476,7 @@ nav {
     align-items: center;
     padding: 96px 10% 96px 10%;
     flex-flow: wrap;
+    align-content: stretch;
 }
 
 .contact-form {
@@ -484,6 +484,11 @@ nav {
     flex-direction: column;
     width: 100%;
     max-width: auto;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+    padding: 0;
 }
 
 .icons {
@@ -491,7 +496,6 @@ nav {
     flex-direction: row;
     gap: 24px;
     margin-top: 32px;
-
 }
 
 .icon {
@@ -503,18 +507,13 @@ nav {
     cursor: pointer;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    gap: 20px;
-    padding: 0;
-}
 
 .inputfield {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    max-width: auto;
 }
 
 .inputbox {
@@ -524,11 +523,11 @@ nav {
     border: 1px solid #818181;
 }
 
-.message{
+.message {
     height: 100px;
 }
 
-.button-contact{
+.button-contact {
     background-color: #5B00B7;
     border-radius: 8px;
     padding: 18px 22px;
@@ -547,13 +546,15 @@ nav {
     cursor: pointer;
 }
 
-.row-start{
+.row-start {
     display: flex;
     align-items: flex-start;
     gap: 48px;
+    width: 100%;
+    max-width: auto;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -562,7 +563,7 @@ footer{
     padding: 24px;
 }
 
-footer h3{
+footer h3 {
     font-size: 10px;
 }
 
@@ -570,7 +571,7 @@ footer h3{
 
 @media screen and (max-width: 600px) {
 
-    .hero{
+    .hero {
         padding: 0 20px 96px 20px;
     }
 
@@ -595,19 +596,19 @@ footer h3{
         width: 100%;
     }
 
-    #about{
+    #about {
         padding: 48px 20px 48px 20px;
     }
 
-    #portfolio{
+    #portfolio {
         padding: 48px 20px 48px 20px;
     }
 
-    #portfolio-2{
+    #portfolio-2 {
         padding: 0 20px 60px 20px;
     }
 
-    #contato{
+    #contato {
         padding: 48px 20px 48px 20px;
     }
 
@@ -615,38 +616,55 @@ footer h3{
 
 @media screen and (max-width: 800px) {
 
-h1{
-    font-size: 32px;
-    line-height: 110%;
+    h1 {
+        font-size: 32px;
+        line-height: 110%;
+    }
+
+    .row-start {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        padding-top: 24px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-link h5 {
+        font-size: 10px;
+    }
+
 }
 
-.row-start{
-    width: 100%;
-    flex-direction: column;
-}
 
-h4 {
-    font-size: 14px;
-}
+@media screen and (max-width: 1600px) {
 
-nav{
-    display: flex;
-    flex-direction: column;
-    height: 70px;
-    padding-top: 24px;
-}
-
-.nav-links{
-    gap: 10px;
-}
-
-.nav-link h5{
-    font-size: 10px;
-}
-
+    .portfolio-2-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
+
+    .portfolio-2-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
     .skill-list-box {
         height: 100%;
         max-height: auto;
