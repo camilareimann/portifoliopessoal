@@ -12,26 +12,24 @@
         rel="stylesheet">
 </head>
 
-
 <body>
     <main>
+
         <header>
             <div class="hero">
-
-
                 <nav>
                     <div class="nav-title">
                         <h4>Camila Reimann | UI/UX Designer</h4>
                     </div>
                     <ul class="nav-links">
                         <li class="nav-link">
-                            <h5>About me</h5>
+                            <a href="#about" class="nav-link"><h5>About me</h5></a>
                         </li>
                         <li class="nav-link">
-                            <h5>My work</h5>
+                            <a href="#portfolio" class="nav-link"><h5>My work</h5></a>
                         </li>
                         <li class="nav-link">
-                            <h5>Contact</h5>
+                            <a href="#contato" class="nav-link"><h5>Contact</h5></a>
                         </li>
                     </ul>
                 </nav>
@@ -52,7 +50,7 @@
             <div class="row">
                 <div class="column">
                     <div id="text-box">
-                        <h5 class="about-me-prehead">ABOUT ME</h5>
+                        <h5 class="prehead">ABOUT ME</h5>
                         <h2>I'm a multidisciplinary designer who strives to solve problems with user-centric solutions.
                         </h2>
                         <p>With a deep passion for modern, unique, and clean design, I've dedicated myself to crafting
@@ -97,7 +95,6 @@
                                 <figcaption class="icon-caption">VS Code</figcaption>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <figure class="column">
@@ -105,6 +102,7 @@
                 </figure>
             </div>
         </section>
+
         <section id="skills">
             <div class="column">
                 <div class="skills-titulo">
@@ -181,12 +179,12 @@
                 </div>
             </div>
         </section>
+
         <section id="portfolio">
             <div class="column">
                 <div class="skills-titulo">
                     <h2 class="titulos">Featured Cases:</h2>
                 </div>
-
                 <div class="portfolio-cards">
                     <div class="portfolio-card">
                         <img src="./assets/case1.png" alt="destaque-athletico">
@@ -240,27 +238,46 @@
                 <img class="projetos" src="./assets/img_Projeto 6.png" alt="maquira">
             </div>
         </section>
-        <section class="contato">
-            <div>
-                <h3>GET IN TOUCH</h3>
-                <h2 class="titulos-black">If you're interested in starting a project together, drop me a line.</h2>
+
+        <section id="contato">
+            <div class="row-start">
+                <div class="column">
+                    <div id="text-box">
+                        <h5 class="prehead">GET IN TOUCH</h5>
+                        <h2 class="titulos-black">If you're interested in starting a project together, drop me a line.
+                        </h2>
+                        <div class="icons">
+                            <img class="icon" src="./assets/icn_dribbble.svg" alt="icon dribble">
+                            <img class="icon" src="./assets/icn_gitHub.svg" alt="icon github">
+                            <img class="icon" src="./assets/icn_linkedIn.svg" alt="icon linkedin">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <fieldset class="contact-form">
+                        <div class="inputfield">
+                            <label class="labeltext" for="name">Name (4 to 8 characters):</label>
+                            <input class="inputbox" id="name" type="text" placeholder="Full Name" required minlength="4" required>
+                        </div>
+
+                        <div class="inputfield">
+                            <label class="labeltext" for="email">Email:</label>
+                            <input class="inputbox" type="email" id="email" placeholder="myemail@email.com" pattern=".+@example\.com"
+                                required />
+                        </div>
+
+                        <div class="inputfield">
+                            <label class="labeltext" for="message">Send you message:</label>
+                            <textarea class="inputbox message" id="message" name="messsage" placeholder="Write a message"></textarea>
+                        </div>
+
+                        <button class="button-contact">Send</button>
+                    </fieldset>
+                </div>
             </div>
-            <div class="icons">
-                <img src="./assets/icn_dribbble.svg" alt="icon dribble">
-                <img src="./assets/icn_gitHub.svg" alt="icon github">
-                <img src="./assets/icn_linkedIn.svg" alt="icon linkedin">
-            </div>
-            <fieldset>
-                <label for="name">Name (4 to 8 characters):</label>
-                <input id="name" type="text" placeholder="full name" required minlength="4" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="myemail@email.com" pattern=".+@example\.com" required />
-                <label for="message">Send you message:</label>
-                <input type="message" id="message" required />
-                <button class="button-dark">Send</button>
-            </fieldset>
         </section>
     </main>
+
     <footer>
         <h3>Camila Reimann | UI/UX Designer - All rights reserved</h3>
     </footer>

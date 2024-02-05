@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,7 +24,7 @@ h2 {
     font-size: 30px;
     font-style: normal;
     font-weight: 300;
-    line-height: 110%;
+    line-height: 120%;
     margin: 0;
     padding: 0 0 24px 0;
 }
@@ -75,6 +76,14 @@ li {
     padding: 0;
 }
 
+.labeltext {
+    color: #5B00B7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
 .icon-caption {
     font-size: 12px;
     text-transform: uppercase;
@@ -92,6 +101,15 @@ li {
     gap: 36px;
     margin: 0;
     padding: 0;
+}
+
+::placeholder{
+    color:#dddada;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 label {
@@ -134,10 +152,11 @@ button {
 
 }
 
-button:hover{
+button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+
 /*Layout*/
 
 nav {
@@ -173,7 +192,7 @@ nav {
     background-image: url(./imgBackgroundHero.png);
     background-repeat: none;
     background-size: cover;
-    color: #ffff;
+    color: #ffffff;
 }
 
 #hero-txt-wrapper {
@@ -191,15 +210,17 @@ nav {
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-	}
-	70% {
-		transform: scale(1.1);
-	}
-	100% {
-		transform: scale(0.95);
-	}
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
 }
 
 /* ABOUT SECTION */
@@ -209,7 +230,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 96px 10% 0 10%;
-
     flex-flow: wrap;
 }
 
@@ -241,7 +261,7 @@ nav {
     justify-content: flex-end;
 }
 
-.about-me-prehead {
+.prehead {
     color: #5B00B7;
     margin-bottom: 16px;
 }
@@ -370,7 +390,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    justify-content: space-between; /*é isso que faz colunas*/
+    justify-content: space-between;
+    /*é isso que faz colunas*/
 }
 
 .portfolio-card {
@@ -393,13 +414,14 @@ nav {
 .portfolio-card button {
     background-color: transparent;
     display: flex;
-    padding: 24px 48px;
+    padding: 18px 36px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
     border: 1px solid #FFF;
     color: #fff;
+    font-size: 14px;
     /*transition: all .2s ease-in-out;*/
 }
 
@@ -408,7 +430,7 @@ nav {
     cursor: pointer;
 }*/
 
-.portfolio-card h2{
+.portfolio-card h2 {
     font-size: 24px;
 }
 
@@ -418,11 +440,11 @@ nav {
     margin-bottom: 32px;
 }
 
-.portfolio-infos h5{
+.portfolio-infos h5 {
     margin-bottom: 26px;
 }
 
-#portfolio-2{
+#portfolio-2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -431,29 +453,130 @@ nav {
     background-color: #5B00B7;
 }
 
-.portfolio-2-cards{
+.portfolio-2-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.portfolio-2-cards img{
+.portfolio-2-cards img {
     width: 100%;
     height: auto;
     border-radius: 16px;
     transition: all .2s ease-in-out;
 }
 
-.portfolio-2-cards img:hover{
+.portfolio-2-cards img:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+#contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 10% 96px 10%;
+    flex-flow: wrap;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: auto;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 32px;
+
+}
+
+.icon {
+    transition: all .2s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.inputfield {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputbox {
+    display: flex;
+    padding: 12px 22px;
+    border-radius: 8px;
+    border: 1px solid #818181;
+}
+
+.message{
+    height: 100px;
+}
+
+.button-contact{
+    background-color: #5B00B7;
+    border-radius: 8px;
+    padding: 18px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffff;
+    border: 1px solid #FFF;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    max-width: 200px;
+}
+
+.button-contact:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.row-start{
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #2C1147;
+    padding: 24px;
+}
+
+footer h3{
+    font-size: 10px;
 }
 
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 600px) {
+
+    .hero{
+        padding: 0 20px 96px 20px;
+    }
+
     .portfolio-card {
         width: 100%;
+        padding: 16px 16px 30px 16px;
         /* Full width on smaller screens */
     }
 
@@ -462,18 +585,64 @@ nav {
         flex-direction: column;
     }
 
-    h4 {
-        font-size: 10px;
-    }
-
     #skills {
         width: 100%;
         flex-direction: column;
+        padding: 0 20px 60px 20px;
     }
 
     .column {
         width: 100%;
     }
+
+    #about{
+        padding: 48px 20px 48px 20px;
+    }
+
+    #portfolio{
+        padding: 48px 20px 48px 20px;
+    }
+
+    #portfolio-2{
+        padding: 0 20px 60px 20px;
+    }
+
+    #contato{
+        padding: 48px 20px 48px 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+h1{
+    font-size: 32px;
+    line-height: 110%;
+}
+
+.row-start{
+    width: 100%;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    padding-top: 24px;
+}
+
+.nav-links{
+    gap: 10px;
+}
+
+.nav-link h5{
+    font-size: 10px;
+}
 
 }
 
@@ -503,4 +672,5 @@ nav {
     .skill-list li {
         margin-left: 10;
     }
+
 }
