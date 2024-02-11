@@ -424,13 +424,13 @@ nav {
     color: #fff;
     font-size: 14px;
     align-self: flex-end;
-    /*transition: all .2s ease-in-out;*/
+    transition: all .2s ease-in-out;
 }
 
-/*.portfolio-card button:hover {
+.portfolio-card button:hover {
     transform: scale(1.05);
     cursor: pointer;
-}*/
+}
 
 .portfolio-card h2 {
     font-size: 24px;
@@ -672,22 +672,8 @@ footer h3 {
 
 @media screen and (max-width: 1200px) {
 
-    .skill-list-box {
-        height: 100%;
-        max-height: auto;
-    }
-
-    .skill-wrapper {
-        width: 100%;
-        flex-direction: column;
-    }
-
     .skill-col-wrapper {
         flex-direction: column;
-    }
-
-    .skill-list-box {
-        height: auto;
     }
 
     .skill-title {
@@ -698,4 +684,27 @@ footer h3 {
         margin-left: 10;
     }
 
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .skill-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns */
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .skill-wrapper {
+        display: block;
+    }
+
+    .skill-col-wrapper {
+        margin: 0;
+        gap: 0;
+    }
+
+    .skill-list-box {
+        margin-bottom: 16px;
+    }
 }

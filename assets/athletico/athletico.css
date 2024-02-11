@@ -247,6 +247,14 @@ iframe {
     cursor: pointer;
 }
 
+.labeltext {
+    color: #5B00B7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
 input {
     font-size: 16px;
     font-style: normal;
