@@ -394,6 +394,9 @@ nav {
 }
 
 .portfolio-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: calc(50% - 10px);
     /*calculo para ajuste em duas colunas com flex*/
     padding: 40px;
@@ -412,7 +415,6 @@ nav {
 
 .portfolio-card button {
     background-color: transparent;
-    display: flex;
     padding: 18px 36px;
     justify-content: center;
     align-items: center;
@@ -421,6 +423,7 @@ nav {
     border: 1px solid #FFF;
     color: #fff;
     font-size: 14px;
+    align-self: flex-end;
     /*transition: all .2s ease-in-out;*/
 }
 
