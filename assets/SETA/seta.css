@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+/*Typography*/
+
+h1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    margin: 0;
+    padding: 0 0 24px 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    margin: 0;
+    padding: 0 0 24px 0;
+}
+
+h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 0;
+    padding: 0 0 24px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder {
+    color: #dddada;
+}
+
+button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.32px;
+    margin: 0;
+    padding: 0;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*Layout*/
+
+nav {
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+    color: #ffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.hero {
+    padding: 0 10% 250px 10%;
+    width: 100%;
+    max-width: auto;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./imgBackgroundHero_SETA.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#hero-txt-wrapper {
+    padding-top: 30px;
+    width: 100%;
+    max-width: auto;
+}
+
+.h1 {
+    width: 100%;
+}
+
+/* SUMMARY SECTION */
+
+#summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 10% 0 10%;
+    flex-flow: wrap;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    padding-bottom: 48px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#text-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: auto;
+}
+
+.prehead {
+    color: #5B00B7;
+    margin-bottom: 16px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    max-width: auto;
+}
+
+
+/* SECTIONS */
+
+#section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    padding: 0px 10% 106px 10%;
+    flex-flow: wrap;
+}
+
+section img {
+    width: 100%;
+    padding-bottom: 10px;
+    ;
+}
+
+.sectionTitles {
+    color: #5B00B7;
+}
+
+.images-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    padding-bottom: 7px;
+}
+
+iframe {
+    width: 100%;
+    height: 330px;
+}
+
+.images-row img {
+    width: calc(50% - 5px);
+}
+
+.images-row>* {
+    flex: 1;
+    margin: 0;
+}
+
+.reviews {
+    width: 60%;
+}
+
+#contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10% 96px 10%;
+    flex-flow: wrap;
+    align-content: stretch;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.icon {
+    transition: all .2s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.labeltext {
+    color: #5B00B7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+input {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.inputfield {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: auto;
+}
+
+.inputbox {
+    display: flex;
+    padding: 12px 22px;
+    border-radius: 8px;
+    border: 1px solid #818181;
+}
+
+.message {
+    height: 100px;
+}
+
+.button-contact {
+    background-color: #5B00B7;
+    border-radius: 8px;
+    padding: 18px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffff;
+    border: 1px solid #FFF;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    max-width: 200px;
+}
+
+.button-contact:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.row-start {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    width: 100%;
+    max-width: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #2C1147;
+    padding: 24px;
+}
+
+footer h3 {
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+
+
+@media screen and (max-width: 800px) {
+
+    .hero {
+        padding: 0 20px 96px 20px;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #summary{
+        padding: 60px 20px 0 20px;
+    }
+
+    #section {
+        padding: 0px 20px 48px 20px;
+    }
+
+    #contato {
+        padding: 48px 20px 48px 20px;
+    }
+
+    .images-row img {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 110%;
+    }
+
+    .row-start {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .reviews {
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        padding-top: 24px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-link h5 {
+        font-size: 10px;
+    }
+
+}

@@ -192,7 +192,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(./imgBackgroundHero.png);
+    background-image: url("./imgs/imgBackgroundHero.png");
     background-repeat: none;
     background-size: cover;
     color: #ffffff;
