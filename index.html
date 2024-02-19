@@ -216,7 +216,7 @@
                             </div>
                         </div>
                         <div><a href="./seta.html" id="profile-link" target="_blank"><button class="button">View
-                            project</button></a></div>
+                                    project</button></a></div>
                     </div>
                     <div class="portfolio-card">
                         <div class="card-content">
@@ -251,7 +251,8 @@
             </div>
             <div class="portfolio-2-cards">
                 <a href="https://dribbble.com/shots/21259023-Log-in-page-DrogaVET" id="portfolio-link"
-                    target="_blank"><img class="projetos" src="assets/imgs/img_project_DrogaVet.webp" alt="drogavet"></a>
+                    target="_blank"><img class="projetos" src="assets/imgs/img_project_DrogaVet.webp"
+                        alt="drogavet"></a>
                 <a href="https://dribbble.com/shots/22170172-The-Legend-of-Zelda-Figma-Transition" id="profile-link"
                     target="_blank"><img class="projetos" src="assets/imgs/img_project_Zelda.webp" alt="zelda"></a>
                 <a href="https://dribbble.com/shots/21831665-Videogame-menu-interface-UI" id="profile-link"
@@ -276,42 +277,33 @@
                         </h2>
                         <div class="icons">
                             <a href="https://dribbble.com/camilareimann" id="profile-link" target="_blank"><img
-                                    class="icon"
-                                    src="assets/imgs/icn_dribbble.svg"
-                                    alt="icon dribble"></a>
+                                    class="icon" src="assets/imgs/icn_dribbble.svg" alt="icon dribble"></a>
                             <a href="https://github.com/camilareimann" id="profile-link" target="_blank"><img
-                                    class="icon"
-                                    src="assets/imgs/icn_gitHub.svg"
-                                    alt="icon github"></a>
+                                    class="icon" src="assets/imgs/icn_gitHub.svg" alt="icon github"></a>
                             <a href="https://www.linkedin.com/in/camilareimann/" id="profile-link" target="_blank"><img
-                                    class="icon"
-                                    src="assets/imgs/icn_linkedIn.svg"
-                                    alt="icon linkedin"></a>
+                                    class="icon" src="assets/imgs/icn_linkedIn.svg" alt="icon linkedin"></a>
                         </div>
                     </div>
                 </div>
                 <div class="column">
-                    <fieldset class="contact-form">
-                        <div class="inputfield">
-                            <label class="labeltext" for="name">Name (4 to 8 characters):</label>
-                            <input class="inputbox" id="name" type="text" placeholder="Full Name" required minlength="4"
-                                required>
-                        </div>
-
-                        <div class="inputfield">
-                            <label class="labeltext" for="email">Email:</label>
-                            <input class="inputbox" type="email" id="email" placeholder="myemail@email.com"
-                                pattern=".+@example\.com" required />
-                        </div>
-
-                        <div class="inputfield">
-                            <label class="labeltext" for="message">Send you message:</label>
-                            <textarea class="inputbox message" id="message" name="messsage"
-                                placeholder="Write a message"></textarea>
-                        </div>
-
-                        <button class="button-contact">Send</button>
-                    </fieldset>
+                        <form action="" method="POST">
+                            <div class="inputfield">
+                                <label class="labeltext" for="name">Name (4 to 8 characters):</label>
+                                <input class="inputbox" id="name" type="text" placeholder="Full Name" required
+                                    minlength="4" required>
+                            </div>
+                            <div class="inputfield">
+                                <label class="labeltext" for="email">Email:</label>
+                                <input class="inputbox" type="email" id="email" placeholder="myemail@email.com"
+                                pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.?([a-z]+)?$" required />
+                            </div>
+                            <div class="inputfield">
+                                <label class="labeltext" for="message">Send you message:</label>
+                                <textarea class="inputbox message" id="message" name="messsage"
+                                    placeholder="Write a message" required></textarea>
+                            </div>
+                            <button class="button-contact">Send</button>
+                        </form>
                 </div>
             </div>
         </section>

@@ -228,7 +228,8 @@ iframe {
     align-content: stretch;
 }
 
-.contact-form {
+
+form {
     display: flex;
     flex-direction: column;
     width: 100%;

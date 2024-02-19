@@ -190,27 +190,26 @@
                     </div>
                 </div>
                 <div class="column">
-                    <fieldset class="contact-form">
-                        <div class="inputfield">
-                            <label class="labeltext" for="name">Name (4 to 8 characters):</label>
-                            <input class="inputbox" id="name" type="text" placeholder="Full Name" required minlength="4"
-                                required>
-                        </div>
 
-                        <div class="inputfield">
-                            <label class="labeltext" for="email">Email:</label>
-                            <input class="inputbox" type="email" id="email" placeholder="myemail@email.com"
-                                pattern=".+@example\.com" required />
-                        </div>
+                        <form action="" method="POST">
+                            <div class="inputfield">
+                                <label class="labeltext" for="name">Name (4 to 8 characters):</label>
+                                <input class="inputbox" id="name" type="text" placeholder="Full Name" required
+                                    minlength="4" required>
+                            </div>
+                            <div class="inputfield">
+                                <label class="labeltext" for="email">Email:</label>
+                                <input class="inputbox" type="email" id="email" placeholder="myemail@email.com"
+                                pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.?([a-z]+)?$" required />
+                            </div>
+                            <div class="inputfield">
+                                <label class="labeltext" for="message">Send you message:</label>
+                                <textarea class="inputbox message" id="message" name="messsage"
+                                    placeholder="Write a message" required></textarea>
+                            </div>
+                            <button class="button-contact">Send</button>
+                        </form>
 
-                        <div class="inputfield">
-                            <label class="labeltext" for="message">Send you message:</label>
-                            <textarea class="inputbox message" id="message" name="messsage"
-                                placeholder="Write a message"></textarea>
-                        </div>
-
-                        <button class="button-contact">Send</button>
-                    </fieldset>
                 </div>
             </div>
         </section>
