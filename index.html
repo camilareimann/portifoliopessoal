@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="./scripts/script.js" defer></script>
+    <script>
+        document.documentElement.className = "js";
+    </script>
 </head>
 
 <body>
@@ -52,7 +56,7 @@
             </div>
         </header>
 
-        <section id="about">
+        <section id="about" class="js-scroll">
             <div class="row">
                 <div class="column">
                     <div id="text-box">
@@ -109,7 +113,7 @@
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="js-scroll">
             <div class="column">
                 <div class="skills-titulo">
                     <h2 class="titulos">What I excell at:</h2>
@@ -192,7 +196,7 @@
                     <h2 class="titulos">Featured Cases:</h2>
                 </div>
                 <div class="portfolio-cards">
-                    <div class="portfolio-card">
+                    <div class="portfolio-card js-scroll">
                         <div class="card-content">
                             <img src="assets/imgs/img_project_CAP.webp" alt="destaque-athletico">
                             <div class="portfolio-infos">
@@ -206,7 +210,7 @@
                                     project</button></a>
                         </div>
                     </div>
-                    <div class="portfolio-card">
+                    <div class="portfolio-card js-scroll">
                         <div>
                             <img src="assets/imgs/img_project_SETA.webp" alt="destaque-seta">
                             <div class="portfolio-infos">
@@ -218,7 +222,7 @@
                         <div><a href="./seta.html" id="profile-link" target="_blank"><button class="button">View
                                     project</button></a></div>
                     </div>
-                    <div class="portfolio-card">
+                    <div class="portfolio-card js-scroll">
                         <div class="card-content">
                             <img src="assets/imgs/img_project_DOGGO.webp" alt="destaque-doggo">
                             <div class="portfolio-infos">
@@ -227,11 +231,10 @@
                                 <p>An app for natural dog food delivery.</p>
                             </div>
                         </div>
-                        <div>
-                            <button class="button">View project</button>
-                        </div>
+                        <div><a href="./doggo.html" id="profile-link" target="_blank"><button class="button">View
+                                    project</button></a></div>
                     </div>
-                    <div class="portfolio-card">
+                    <div class="portfolio-card js-scroll">
                         <div class="card-content">
                             <img src="assets/imgs/img_project_ECH.webp" alt="destaque-ech">
                             <div class="portfolio-infos">
@@ -249,7 +252,7 @@
             <div class="skills-titulo">
                 <h2 class="titulos">More projects I've enjoyed working on:</h2>
             </div>
-            <div class="portfolio-2-cards">
+            <div class="portfolio-2-cards js-scroll">
                 <a href="https://dribbble.com/shots/21259023-Log-in-page-DrogaVET" id="portfolio-link"
                     target="_blank"><img class="projetos" src="assets/imgs/img_project_DrogaVet.webp"
                         alt="drogavet"></a>
@@ -268,7 +271,7 @@
             </div>
         </section>
 
-        <section id="contato">
+        <section id="contato" class="js-scroll">
             <div class="row-start">
                 <div class="column">
                     <div id="text-box">
@@ -286,24 +289,24 @@
                     </div>
                 </div>
                 <div class="column">
-                        <form action="" method="POST">
-                            <div class="inputfield">
-                                <label class="labeltext" for="name">Name (4 to 8 characters):</label>
-                                <input class="inputbox" id="name" type="text" placeholder="Full Name" required
-                                    minlength="4" required>
-                            </div>
-                            <div class="inputfield">
-                                <label class="labeltext" for="email">Email:</label>
-                                <input class="inputbox" type="email" id="email" placeholder="myemail@email.com"
+                    <form action="" method="POST">
+                        <div class="inputfield">
+                            <label class="labeltext" for="name">Name (4 to 8 characters):</label>
+                            <input class="inputbox" id="name" type="text" placeholder="Full Name" required minlength="4"
+                                required>
+                        </div>
+                        <div class="inputfield">
+                            <label class="labeltext" for="email">Email:</label>
+                            <input class="inputbox" type="email" id="email" placeholder="myemail@email.com"
                                 pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.?([a-z]+)?$" required />
-                            </div>
-                            <div class="inputfield">
-                                <label class="labeltext" for="message">Send you message:</label>
-                                <textarea class="inputbox message" id="message" name="messsage"
-                                    placeholder="Write a message" required></textarea>
-                            </div>
-                            <button class="button-contact">Send</button>
-                        </form>
+                        </div>
+                        <div class="inputfield">
+                            <label class="labeltext" for="message">Send you message:</label>
+                            <textarea class="inputbox message" id="message" name="messsage"
+                                placeholder="Write a message" required></textarea>
+                        </div>
+                        <button class="button-contact">Send</button>
+                    </form>
                 </div>
             </div>
         </section>
