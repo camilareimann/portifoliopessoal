@@ -129,6 +129,7 @@ a {
     background-image: url(./imgBackgroundHero_ECH.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
     color: #ffffff;
 }
 
