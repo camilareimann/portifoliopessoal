@@ -42,3 +42,34 @@ function initAnimaScroll() {
 }
 
 initAnimaScroll();
+
+const button = document.querySelector(".button-contact");
+button.addEventListener("click", function (event) {
+    event.preventDefault();
+})
+
+function sendEmail() {
+    let parametros = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    }
+    if (parametros.name !== "" && parametros.email !== "" && parametros.message !== "") {
+        const serviceID = "service_m362nvp";
+        const templateID = "template_m5ubili";
+
+        emailjs.send(serviceID, templateID, parametros)
+            .then(
+                res => {
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("you're message was sent successfully");
+                }
+            )
+    }
+};
+
+
+

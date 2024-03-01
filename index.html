@@ -14,6 +14,15 @@
     <script>
         document.documentElement.className = "js";
     </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "RHbW9Ivmf0pjBJEd2",
+                });
+            })();
+        </script>
 </head>
 
 <body>
@@ -219,7 +228,7 @@
                                 <p>Website interface and assets for a Non Profit Organization.</p>
                             </div>
                         </div>
-                        <div><a href="./seta.html" id="profile-link" ><button class="button">View
+                        <div><a href="./seta.html" id="profile-link"><button class="button">View
                                     project</button></a></div>
                     </div>
                     <div class="portfolio-card js-scroll">
@@ -231,7 +240,7 @@
                                 <p>An app for natural dog food delivery.</p>
                             </div>
                         </div>
-                        <div><a href="./doggo.html" id="profile-link" ><button class="button">View
+                        <div><a href="./doggo.html" id="profile-link"><button class="button">View
                                     project</button></a></div>
                     </div>
                     <div class="portfolio-card js-scroll">
@@ -243,8 +252,8 @@
                                 <p>Website redesign for a chain of local schools.</p>
                             </div>
                         </div>
-                        <div><a href="./ech.html" id="profile-link" ><button class="button">View
-                            project</button></a></div>
+                        <div><a href="./ech.html" id="profile-link"><button class="button">View
+                                    project</button></a></div>
                     </div>
                 </div>
             </div>
@@ -299,14 +308,14 @@
                         <div class="inputfield">
                             <label class="labeltext" for="email">Email:</label>
                             <input class="inputbox" type="email" id="email" placeholder="myemail@email.com"
-                                pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.?([a-z]+)?$" required />
+                                required />
                         </div>
                         <div class="inputfield">
                             <label class="labeltext" for="message">Send you message:</label>
                             <textarea class="inputbox message" id="message" name="messsage"
                                 placeholder="Write a message" required></textarea>
                         </div>
-                        <button class="button-contact">Send</button>
+                        <button class="button-contact" onclick="sendEmail()">Send</button>
                     </form>
                 </div>
             </div>
